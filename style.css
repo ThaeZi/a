@@ -1,10 +1,10 @@
 @font-face {
 font-family: Sublima;
-src: url(/font/Sublima-Light.otf);
+src: url(./font/Sublima-Light.otf);
 }
 @font-face {
 font-family: Sublimabold;
-src: url(/font/Sublima-ExtraBold.otf);
+src: url(./font/Sublima-ExtraBold.otf);
 }
 
 
