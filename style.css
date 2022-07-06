@@ -551,10 +551,16 @@ input{
   background-color: #7C78B7;
   color: white;
   font-family: Sublima;
+  outline: none;
 }
 
+input:focus{
+  border: 1px solid white;
+}
+
+
 .input-msg {
-height: 120px
+height: 120px;
 }
 
 
