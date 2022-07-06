@@ -34,6 +34,7 @@ display: flex;
 width: 100%;
 justify-content: center;
 margin-bottom: 50px;
+margin-top: 50px;
 }
 
 .nav-list li a:hover {
@@ -41,7 +42,7 @@ opacity: 0.7;
 }
 
 body {
-background-color: #252531;
+background-color: #484860;
 height: 100%;
 }
 
@@ -57,7 +58,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 font-family: Sublima;
-background: #23232e;
+background: #7C78B7;
 height: 80px;
 }
 
@@ -125,7 +126,7 @@ transform: rotate(45deg) translate(-5px, -7px);
 
 
 
-      /* MAIN */
+      /* HOME */
 main {
 margin: 25px 16% 0 16%;
 animation: animaçãoPort 1.0s ease-in 0s;
@@ -134,11 +135,31 @@ animation: animaçãoPort 1.0s ease-in 0s;
 .row {
 display: flex;
 flex-wrap: nowrap;
+justify-content: center;
+}
+
+.row-projeto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-projeto a{
+  width: 70%;
+}
+
+.row-projeto a:hover{
+  width: 70%;
+}
+
+.guia a img{
+  object-fit: scale-down;
 }
 
 .port {  
 height: 500px;
-margin: 5px;   
+  margin: 5px;   
 cursor: pointer;
 }
 
@@ -188,6 +209,10 @@ width: 30%;
 width: 68.3%;
 }
 
+.img10, .img11{
+  width: 50%;
+}
+
 @keyframes animaçãoPort {
 from {
 opacity: 0;
@@ -198,8 +223,93 @@ opacity: 1;
 }
 
 
+            /* PÁGINA PROJETO INDIVIDUAL  */
 
-              /* Footer */
+.main-projeto{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.text-projeto{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-top: 80px;
+margin-bottom: 50px;
+
+}
+.h1-projeto{
+  font-family: Sublimabold;
+  color: white;
+}
+
+.p-projeto{
+  font-family: Sublima;
+}
+
+.p-clique-aqui{
+  font-size: 12px;
+  color: rgb(156, 151, 151);
+}
+
+.a-projeto{
+color: rgb(127, 127, 214);
+}
+
+
+.projeto-container{
+  width: 100%;
+  height: 100%;
+}
+
+.projeto-container div{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+margin-top: 50px;
+}
+
+
+.projeto-imagem{
+  width: 30%;
+  margin: 5px 2.5px 0 2.5px;
+}
+
+.img-projeto{
+  width: 100%;
+}
+
+ 
+.guiaparlamento a:hover{
+  width: 32%;
+}
+
+.fileira2{
+  margin-top: 0;
+}
+
+.fileira3 a{
+width: 40%;
+}
+
+.revista a{
+  width: 80%;
+  object-fit: cover;
+}
+
+.photoshop a{
+  width: 40%;
+}
+
+.photoshop a:hover{
+  width: 48%;
+}
+
+                    /* Footer */
 footer {
 position: relative;
 bottom: 0;
@@ -222,6 +332,7 @@ text-align: center;
 
 .main-about{
   height: 72vh;
+  margin-top: 100px;
 }
 
 .all-about{
@@ -249,7 +360,7 @@ display: flex;
 width: 700px;
 height: 550px;
 justify-content: center;
-align-items: flex-start;
+align-items: center;
 
 
 position: relative;
@@ -293,6 +404,7 @@ width: 100%;
 margin-right: 0;
 margin-left: 0;
 margin-top: 5%;
+margin-bottom: 100px;
 animation: animaçãoPort 1.0s ease-in 0s;
 
 }
@@ -373,6 +485,7 @@ color: white;
 display: flex;
 justify-content: center;
 align-items: flex-start;
+margin-top: 100px;
 }
 
 .h1-form{
@@ -413,7 +526,7 @@ button {
   border: none;
   height: 50px;
   width: 25%;
-  background-color: rgb(112, 106, 197);
+  background-color: #7C78B7;
   color: white;
   font-weight: bold;
   margin-top: 20px;
@@ -425,7 +538,7 @@ button {
 button:hover{
 cursor: pointer;
 background-color: white;
-color: rgb(112, 106, 197) ;
+color: #7C78B7;
 }
 
 input{
@@ -435,7 +548,7 @@ input{
   border-radius: 30px;
   border: none;
   font-size: 15px;
-  background-color: rgb(112, 106, 197);
+  background-color: #7C78B7;
   color: white;
   font-family: Sublima;
 }
@@ -511,6 +624,7 @@ aside{
   font-family: Sublimabold;
   margin-bottom: 150px;
   font-size: 50px;
+  text-align: center;
 }
 
 
@@ -600,6 +714,10 @@ margin-top: 0;
 }
 }
 
+
+
+
+
 @media (max-width: 999px) {
 body {
 overflow-x: hidden;
@@ -620,7 +738,7 @@ top: 8vh;
 right: 0;
 width: 40vw;
 height: 100%;
-background: #23232e;
+background: #7C78B7;
 z-index: 5;
 flex-direction: column;
 align-items: center;
@@ -642,7 +760,21 @@ flex-direction: column;
 align-items: center;
 }
 .port {
-width: 100%;   
+width: 100% !important;  
+height: auto;
+}
+
+img{
+  object-fit: contain !important;
+}
+
+.revista a{
+  width: 100%;
+}
+
+.text-projeto{
+  font-size: 12px;
+ margin-top: 70px;
 }
 
 .port:hover {
